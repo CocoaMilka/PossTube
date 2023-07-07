@@ -1,0 +1,22 @@
+{
+
+    "manifest_version": 2,
+    "name": "PossTube",
+    "version": "1.0",
+  
+    "description": "Adds silly possums to youtube thumbnails",
+    "homepage_url": "https://github.com/CocoaMilka/PossTube",
+  
+    "icons": {
+      "48": "icons/opossum-icon-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["posstube.js"]
+      }
+    ]
+  
+  }
+  
